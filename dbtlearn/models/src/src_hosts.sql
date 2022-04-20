@@ -1,7 +1,7 @@
 WITH RAW_HOSTS AS (
     SELECT
         *
-    FROM AIRBNB.RAW.RAW_HOSTS
+    FROM {{ source('airbnb', 'hosts') }}
 )
 
 SELECT
